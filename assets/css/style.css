@@ -1,0 +1,127 @@
+/*
+*
+* Created by Marton
+* https://marton.lederer.hu
+*
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
+
+body {
+
+  margin: 0;
+  background-color: #000;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+::selection {
+
+  background: #fff;
+  color: #000;
+
+}
+
+::-moz-selection {
+
+  background: #fff;
+  color: #000;
+
+}
+
+.landing {
+
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+}
+
+.landing .title {
+
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 7em;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 22px;
+  text-transform: uppercase;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.landing .scroll-down {
+
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+  text-align: center;
+
+}
+
+.landing .scroll-down ion-icon {
+
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.landing .scroll-down .scroll-indicator {
+
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  opacity: 0;
+  margin-top: -40px;
+  font-weight: 200;
+  -webkit-animation-name: hideIndicator;
+  -webkit-animation-duration: 1.35s;
+  animation-name: hideIndicator;
+  animation-duration: 1.35s;
+
+}
+
+@-webkit-keyframes hideIndicator {
+
+  from {
+
+    opacity: 1;
+    margin-top: 0;
+
+  }
+
+  to {
+
+    opacity: 0;
+    margin-top: -40px;
+
+  }
+
+}
+
+@keyframes hideIndicator {
+
+  from {
+
+    opacity: 1;
+    margin-top: 0;
+
+  }
+
+  to {
+
+    opacity: 0;
+    margin-top: -40px;
+
+  }
+
+}

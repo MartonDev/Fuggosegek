@@ -125,6 +125,23 @@ body {
 
 }
 
+@media screen and (max-width: 790px) {
+
+  .landing .title {
+
+    font-size: 2.3em;
+
+  }
+
+  .addiction-section img, .addiction-section .desc {
+
+    width: 100%;
+    display: block;
+
+  }
+
+}
+
 @-webkit-keyframes hideIndicator {
 
   from {
